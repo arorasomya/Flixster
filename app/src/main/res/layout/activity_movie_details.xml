@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MovieDetailsActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="-2dp"
+        android:textColor="@color/white"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         tools:layout_editor_absoluteY="3dp" />
 
@@ -30,6 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:textColor="@color/white"
         android:layout_below="@+id/rbVoteAverage"
+        android:alpha="0.7"
         android:text="TextView" />
 </RelativeLayout>
