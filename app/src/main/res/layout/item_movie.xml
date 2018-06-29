@@ -37,5 +37,8 @@
         android:textColor="@android:color/white"
         android:layout_toRightOf="@id/tvPosterImage"
         android:ellipsize="end"
+        android:maxLines="6"
+        android:alpha="0.8"
+
         android:text="Movie Overview and synopsis" />
 </RelativeLayout>

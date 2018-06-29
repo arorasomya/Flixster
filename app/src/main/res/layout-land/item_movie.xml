@@ -21,15 +21,20 @@
         android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/ivBackdropImage"
+        android:layout_toEndOf="@id/ivBackdropImage"
         android:text="Movie Title"
+        android:textColor="@color/white"
         android:textSize="18dp" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="112dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvTitle"
-        android:layout_toEndOf="@+id/ivBackdropImage"
+        android:layout_below="@id/tvTitle"
+        android:layout_toEndOf="@id/ivBackdropImage"
+        android:textColor="@color/white"
+        android:alpha="0.8"
+        android:ellipsize="end"
+        android:maxLines="11"
         android:text="TextView" />
 </RelativeLayout>
