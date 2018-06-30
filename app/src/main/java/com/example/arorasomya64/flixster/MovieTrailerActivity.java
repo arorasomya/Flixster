@@ -1,5 +1,6 @@
 package com.example.arorasomya64.flixster;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,8 +15,7 @@ import com.loopj.android.http.AsyncHttpClient;
 import java.util.ArrayList;
 
 public class MovieTrailerActivity extends YouTubeBaseActivity {
-    ArrayList<Movie> movies;
-    MovieAdapter adapter;
+
 
 
     @Override
@@ -25,10 +25,10 @@ public class MovieTrailerActivity extends YouTubeBaseActivity {
 
 
         // initialize the adapter -- movies array cannot be reinitiaized after this point
-        adapter = new MovieAdapter(movies);
 
-        // temporary test video id --
-        final String videoId = "tKodtNFpzBA";
+        final String videoId = getIntent().getStringExtra("key_id");;
+
+
 
         // resolve the player view from the layout
         YouTubePlayerView playerView = (YouTubePlayerView) findViewById(R.id.player);
